@@ -40,6 +40,6 @@
   <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="private/msm-modules/wlan/fw-api" remote="clo_vendor_waipio" />
   <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="private/msm-modules/wlan/qca-wifi-host-cmn" remote="clo_vendor_waipio" />
   <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="private/msm-modules/wlan/qcacld-3.0" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/opensource/datarmnet" path="private/msm-modules/datarmnet" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/opensource/datarmnet-ext" path="private/msm-modules/datarmnet-ext" remote="clo_vendor_waipio" />
+  <project name="platform/vendor/qcom/opensource/datarmnet" path="private/msm-modules/datarmnet" remote="clo_vendor_waipio" />
+  <project name="platform/vendor/qcom/opensource/datarmnet-ext" path="private/msm-modules/datarmnet-ext" remote="clo_vendor_waipio" />
 </manifest>
