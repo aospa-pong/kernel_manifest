@@ -27,15 +27,15 @@
   <project name="AOSPA/vendor_qcom_proprietary_mmrm-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/mmrm" remote="github" revision="topaz-asus-davinci" />
   <project name="AOSPA/vendor_qcom_proprietary_video-devicetree" path="private/msm-asus/arch/arm64/boot/dts/vendor/qcom/video" remote="github" revision="topaz-asus-davinci" /> -->
 
-  <project name="platform/vendor/opensource/audio-kernel" path="private/msm-modules/audio-kernel" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/opensource/camera-kernel" path="private/msm-modules/camera-kernel" revision="f526f087c7f71d61c9832c39c5ecacf01bb21389" upstream="refs/heads/camera-kernel.lnx.5.0.r2-rel" />
+  <project name="platform/vendor/qcom/opensource/audio-kernel-ar" path="private/msm-modules/audio-kernel" remote="clo_vendor_waipio" />
+  <project name="platform/vendor/opensource/camera-kernel" path="private/msm-modules/camera-kernel" remote="clo" revision="f526f087c7f71d61c9832c39c5ecacf01bb21389" upstream="refs/heads/camera-kernel.lnx.5.0.r2-rel" />
   <project name="platform/vendor/opensource/cvp-kernel" path="private/msm-modules/cvp-kernel" remote="clo_vendor_waipio" />
   <project name="platform/vendor/opensource/dataipa" path="private/msm-modules/dataipa" remote="clo_vendor_waipio" />
   <project name="platform/vendor/opensource/display-kernel" path="private/msm-modules/display-kernel" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/opensource/mmrm-driver" path="private/msm-modules/mmrm-driver" revision="ce5c3a5859c1edea355144a7749e8b3ebe982abe" upstream="refs/heads/mmrm-kernel-waipio.lnx.1.0.r2-rel" />
-  <project name="platform/vendor/opensource/mmrm-driver-test" path="private/msm-modules/mmrm-driver/test" revision="5e5e099689db214795b00771e7715b7dbdc71b3c" upstream="refs/heads/mmrm-kernel-waipio.lnx.1.0.r2-rel" />
+  <project name="platform/vendor/opensource/mmrm-driver" path="private/msm-modules/mmrm-driver" remote="clo" revision="ce5c3a5859c1edea355144a7749e8b3ebe982abe" upstream="refs/heads/mmrm-kernel-waipio.lnx.1.0.r2-rel" />
+  <project name="platform/vendor/opensource/mmrm-driver-test" path="private/msm-modules/mmrm-driver/test" remote="clo" revision="5e5e099689db214795b00771e7715b7dbdc71b3c" upstream="refs/heads/mmrm-kernel-waipio.lnx.1.0.r2-rel" />
   <project name="platform/vendor/opensource/eva-kernel" path="private/msm-modules/eva-kernel" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/opensource/video-driver" path="private/msm-modules/video-driver" revision="2d60a4d2409c6875926983e90517b4d9e834689e" upstream="refs/heads/video-kernel-waipio.lnx.1.0.r2-rel" />
+  <project name="platform/vendor/opensource/video-driver" path="private/msm-modules/video-driver" remote="clo" revision="2d60a4d2409c6875926983e90517b4d9e834689e" upstream="refs/heads/video-kernel-waipio.lnx.1.0.r2-rel" />
   <project name="platform/vendor/opensource/touch-drivers" path="private/msm-modules/touch-drivers" remote="clo_vendor_waipio" />
   <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="private/msm-modules/wlan/fw-api" remote="clo_vendor_waipio" />
   <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="private/msm-modules/wlan/qca-wifi-host-cmn" remote="clo_vendor_waipio" />
