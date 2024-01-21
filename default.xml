@@ -13,7 +13,7 @@
 
   <project name="kernel/common" path="common" remote="clo_kernel_waipio" />
   <project name="kernel/msm-5.10" path="private/msm-phone2" revision="1e2a351e625b550ea56f8b87226b8fd8dde7d728" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="clo_kernel_waipio" >
-    <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
+    <linkfile dest="build.config.msm.waipio" src="build.config.msm.waipio"/>
   </project>
   <project path="build/kernel" name="kernel/build" groups="partner">
     <linkfile dest="tools/bazel" src="kleaf/bazel.sh"/>
