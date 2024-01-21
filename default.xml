@@ -3,7 +3,7 @@
 
   <remote  name="aosp"
     fetch="https://android.googlesource.com/" />
-  <default revision="android-gs-raviole-5.10-android12-qpr3"
+  <default revision="android-gs-raviole-5.10-android14"
     remote="aosp" />
 
   <remote name="github"
@@ -15,17 +15,41 @@
   <project name="kernel/msm-5.10" path="private/msm-phone2" revision="1e2a351e625b550ea56f8b87226b8fd8dde7d728" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="clo_kernel_waipio" >
     <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
   </project>
-  <project path="build" name="kernel_build" remote="statix-git" />
+  <project path="build/kernel" name="kernel/build" groups="partner">
+    <linkfile dest="tools/bazel" src="kleaf/bazel.sh"/>
+    <linkfile dest="WORKSPACE" src="kleaf/bazel.WORKSPACE"/>
+    <linkfile dest="build/build.sh" src="build.sh"/>
+    <linkfile dest="build/build_abi.sh" src="build_abi.sh"/>
+    <linkfile dest="build/build_test.sh" src="build_test.sh"/>
+    <linkfile dest="build/build_utils.sh" src="build_utils.sh"/>
+    <linkfile dest="build/BUILD.bazel" src="BUILD.bazel"/>
+    <linkfile dest="build/build-tools/path" src="build-tools/path"/>
+    <linkfile dest="build/config.sh" src="config.sh"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/_setup_env.sh" src="_setup_env.sh"/>
+    <linkfile dest="build/multi-switcher.sh" src="multi-switcher.sh"/>
+    <linkfile dest="build/kleaf" src="kleaf"/>
+    <linkfile dest="build/abi" src="abi"/>
+    <linkfile dest="build/static_analysis" src="static_analysis"/>
+  </project>
   <project path="kernel/configs" name="kernel/configs" />
-  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" clone-depth="1" />
-  <project path="external/dtc" name="kernel_platform/external/dtc" remote="clo" revision="deb932d81061c472e8bb2648a409a456e6e84997" />
-  <project path="prebuilts-master/clang/host/linux-x86" name="kernelplatform/prebuilts-master/clang/host/linux-x86" revision="0fc3d01a780023469b7acc18c56a9cf5099a6d6c" remote="clo_kernel_waipio" clone-depth="1" />
-  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" groups="partner" clone-depth="1" />
-  <project path="prebuilts-master/misc" name="platform/prebuilts/misc" groups="partner" clone-depth="1" />
-  <project path="prebuilts/boot-artifacts" name="platform/prebuilts/boot-artifacts" groups="partner" clone-depth="1" />
-  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="partner" clone-depth="1" />
-  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" groups="partner" clone-depth="1" />
-  <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" groups="partner" />
+  <project path="common-modules/virtual-device" name="kernel/common-modules/virtual-device" />
+  <project path="prebuilts/gas/linux-x86" name="platform/prebuilts/gas/linux-x86" />
+  <project path="prebuilts/clang/host/linux-x86" name="platform/prebuilts/clang/host/linux-x86" groups="partner" />
+  <project path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.17-4.8" groups="partner" />
+  <project path="prebuilts/misc" name="platform/prebuilts/misc" groups="partner" />
+  <project path="prebuilts/build-tools" name="platform/prebuilts/build-tools" groups="partner">
+    <linkfile dest="build/prebuilts/build-tools" src="."/>
+  </project>
+  <project path="prebuilts/kernel-build-tools" name="kernel/prebuilts/build-tools" groups="partner">
+    <linkfile dest="build/prebuilts/kernel-build-tools" src="."/>
+  </project>
+  <project path="tools/mkbootimg" name="platform/system/tools/mkbootimg" groups="partner"/>
+  <project path="build/bazel_common_rules" name="platform/build/bazel_common_rules" groups="partner"/>
+  <project path="external/bazel-skylib" name="platform/external/bazel-skylib" groups="partner"/>
+  <project path="external/stardoc" name="platform/external/stardoc" groups="partner"/>
+  <project path="prebuilts/bazel/linux-x86_64" name="platform/prebuilts/bazel/linux-x86_64" groups="partner"/>
+  <project path="prebuilts/jdk/jdk11" name="platform/prebuilts/jdk/jdk11" groups="partner" />
 
   <include name="msm-modules.xml" />
 </manifest>
