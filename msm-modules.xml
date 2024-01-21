@@ -31,7 +31,7 @@
   <project name="platform/vendor/opensource/camera-kernel" path="private/msm-modules/camera-kernel" remote="clo" revision="f526f087c7f71d61c9832c39c5ecacf01bb21389" upstream="refs/heads/camera-kernel.lnx.5.0.r2-rel" />
   <project name="platform/vendor/opensource/cvp-kernel" path="private/msm-modules/cvp-kernel" remote="clo_vendor_waipio" />
   <project name="platform/vendor/opensource/dataipa" path="private/msm-modules/dataipa" remote="clo_vendor_waipio" />
-  <project name="platform/vendor/opensource/display-kernel" path="private/msm-modules/display-kernel" remote="clo_vendor_waipio" />
+  <project name="platform/vendor/opensource/display-kernel" path="private/msm-modules/display-kernel" remote="clo" revision="1be9faef088aec70eb21277dc9ed62849c9eaa93" upstream="refs/heads/display-kernel.lnx.5.10.r3-rel" />
   <project name="platform/vendor/opensource/mmrm-driver" path="private/msm-modules/mmrm-driver" remote="clo" revision="ce5c3a5859c1edea355144a7749e8b3ebe982abe" upstream="refs/heads/mmrm-kernel-waipio.lnx.1.0.r2-rel" />
   <project name="platform/vendor/opensource/mmrm-driver-test" path="private/msm-modules/mmrm-driver/test" remote="clo" revision="5e5e099689db214795b00771e7715b7dbdc71b3c" upstream="refs/heads/mmrm-kernel-waipio.lnx.1.0.r2-rel" />
   <project name="platform/vendor/opensource/eva-kernel" path="private/msm-modules/eva-kernel" remote="clo_vendor_waipio" />
