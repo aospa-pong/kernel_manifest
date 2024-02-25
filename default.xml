@@ -13,7 +13,7 @@
 
   <!-- Kernel platform manifest -->
   <project name="kernel/build" path="kernel_platform/build" revision="refs/heads/kernel.lnx.5.10.r1-rel"/>
-  <project groups="qki" name="kernel/common" path="kernel_platform/common" revision="refs/heads/ks-kernel.lnx.1.0.r1-rel"/>
+  <project name="msm-5.10" path="kernel_platform/common" remote="phone2" revision="common"/>
   <project name="msm-5.10" path="kernel_platform/msm-kernel" upstream="refs/heads/kernel.lnx.5.10.r1-rel" remote="phone2" revision="uvite">
     <linkfile dest="kernel_platform/common/build.config.msm.waipio" src="build.config.msm.waipio"/>
     <linkfile dest="kernel_platform/common/build.config.msm.waipio.tuivm" src="build.config.msm.waipio.tuivm"/>
